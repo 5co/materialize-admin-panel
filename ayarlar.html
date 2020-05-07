@@ -1,0 +1,131 @@
+<?php 
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Panel</title>
+    <script src="./assets/js/dropzone.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/css/dropzone.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/Chart.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body class="blue-grey lighten-5">
+    <nav>
+        <div class=" ">
+            <div class="light-green lighten-4">
+                <ul class="sidenav sidenav-fixed" id="mobile-demo">
+                    <div class="hide-on-med-and-down white darken-4">
+                        <a href="#!">
+                            <h2>LOGO</h2>
+                        </a>
+                    </div>
+                    <li><a href="./index.html">Ana Sayfa</a></li>
+                    <li><a href="./sayfalar.html">Sayfalar</a></li>
+                    <li><a href="./galeri.html">Galeri</a></li>
+                    <li><a href="./ticket.html">Destek</a></li>
+                    <li><a href="./ayarlar.html">Ayarlar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="row blue darken-4 valign-wrapper hide-on-med-and-up">
+            <div class="col s10">
+                <a href="#!">
+                    <h2>LOGO</h2>
+                </a>
+            </div>
+            <div class="col s2 ">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger s2"><i class="menu-icon material-icons  white-text">menu</i></a>
+            </div>
+        </div>
+        <div class="fixed-action-btn  animated fadeInDown">
+            <a class="btn-floating btn-large">
+                <img src="./assets/images/girl-icon-png-28.jpg.png" class="responsive-img" alt="">
+            </a>
+            <ul>
+                <li><a href="logout.html" class="btn-floating red darken-4"><i class="material-icons">logout</i></a></li>
+                <li><a href="./profil.html" class="btn-floating blue darken-4"><i class="material-icons">account_circle</i></a></li>
+            </ul>
+        </div>
+    </header>
+
+<main>
+    <div class="row">
+        <div class="col s12">
+            <h1 class="flow-text">Ayarlar</h1>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <form action="" method="POST">
+        <div style="float:left;width:50%" class="col s6 m6 animated fadeInUp">
+            <h1 class="flow-text">Site Başlığı</h1>
+            <div class="form-group">
+                <input type="text" class="form-control" name="baslik">
+            </div>
+            <h1 class="flow-text">Meta Açıklaması</h1>
+            <div class="form-group">
+                <input type="text" class="form-control" name="meta_desc">
+            </div>
+
+            <h1 class="flow-text">Meta Etiketleri</h1>
+            <div class="form-group">
+                <input type="text" class="form-control" name="meta_tag">
+            </div>
+
+            <h1 class="flow-text">Meta Etiketleri</h1>
+            <div class="form-group">
+                <input type="text" class="form-control" name="meta_tag">
+            </div>
+
+        </div>
+        <div style="float:right;width:50%">
+            <div class="col s5 m5 animated fadeInUp">
+                <h1 class="flow-text">Telefon No</h1>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="telefon" value="" id="" aria-describedby="helpId" placeholder="">
+                </div>
+                <h1 class="flow-text">Mail Adresi</h1>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="mail" value="" id="" aria-describedby="helpId" placeholder="">
+                </div>
+
+                <h1 class="flow-text">İş Adresi</h1>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="adres" value="" id="" aria-describedby="helpId" placeholder="">
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="margin: 100px;">Kaydet</button>
+    </form>
+    <div class="clear"></div>
+    <div class="clear"></div>
+    </div>
+    </div>
+</main>
+<footer>
+</footer>
+
+<div class="progress preloader">
+    <div class="indeterminate"></div>
+</div>
+<script src="http://cdn.ckeditor.com/4.6.2/standard-all/ckeditor.js"></script>
+<script src="./assets/js/jquery-3.4.1.min.js"></script>
+<script src="./assets/js/materialize.min.js"></script>
+<script src="./assets/js/Chart.min.js"></script>
+<script src="./assets/js/main.js"></script>
+</body>
+
+</html>

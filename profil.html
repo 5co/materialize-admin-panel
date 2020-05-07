@@ -1,0 +1,125 @@
+<?php <!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Panel</title>
+    <script src="./assets/js/dropzone.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/dropzone.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/Chart.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="blue-grey lighten-5">
+    <nav>
+        <div class=" ">
+            <div class="light-green lighten-4">
+                <ul class="sidenav sidenav-fixed" id="mobile-demo">
+                    <div class="hide-on-med-and-down white darken-4">
+                        <a href="#!">
+                            <h2>LOGO</h2>
+                        </a>
+                    </div>
+                    <li><a href="./index.html">Ana Sayfa</a></li>
+                    <li><a href="./sayfalar.html">Sayfalar</a></li>
+                    <li><a href="./galeri.html">Galeri</a></li>
+                    <li><a href="./ticket.html">Destek</a></li>
+                    <li><a href="./ayarlar.html">Ayarlar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="row blue darken-4 valign-wrapper hide-on-med-and-up">
+            <div class="col s10">
+                <a href="#!">
+                    <h2>LOGO</h2>
+                </a>
+            </div>
+            <div class="col s2 ">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger s2"><i class="menu-icon material-icons  white-text">menu</i></a>
+            </div>
+        </div>
+        <div class="fixed-action-btn  animated fadeInDown">
+            <a class="btn-floating btn-large">
+                <img src="./assets/images/girl-icon-png-28.jpg.png" class="responsive-img" alt="">
+            </a>
+            <ul>
+                <li><a href="logout.html" class="btn-floating red darken-4"><i class="material-icons">logout</i></a></li>
+                <li><a href="./profil.html" class="btn-floating blue darken-4"><i class="material-icons">account_circle</i></a></li>
+            </ul>
+        </div>
+    </header>
+
+<main>
+    <div class="row">
+        <div class="col s12">
+            <h1 class="flow-text">Profil</h1>
+        </div>
+    </div>
+    <div class="divider"></div>
+
+    <div class="container">
+        <form action="" class="row" method="post">
+            <div class="col s12 m6">
+                <label class="flow-text">Ad - Soyad</label>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="adsoyad">
+                </div>
+            </div>
+            <div class="col s12 m6">
+            <label class="flow-text">Kullanıcı Adı</label>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="kullanici_adi">
+                </div>
+            </div>
+            <div class="col s12 m6">
+            <label class="flow-text">Parola</label>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="sifre">
+                </div>
+            </div>
+            <div class="col s12 m6">
+            <label class="flow-text">Parola ( Tekrar )</label>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="sifre">
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <label class="flow-text">E Posta</label>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="eposta">
+                </div>
+            </div>
+            <div class="col s12 m12 center">
+                <button type="submit" class="btn btn-primary">Kaydet</button>
+            </div>
+        </form>
+    </div>
+    <div class="clear"></div>
+    <div class="clear"></div>
+</main>
+<footer>
+</footer>
+
+<div class="progress preloader">
+    <div class="indeterminate"></div>
+</div>
+<script src="http://cdn.ckeditor.com/4.6.2/standard-all/ckeditor.js"></script>
+<script src="./assets/js/jquery-3.4.1.min.js"></script>
+<script src="./assets/js/materialize.min.js"></script>
+<script src="./assets/js/Chart.min.js"></script>
+<script src="./assets/js/main.js"></script>
+</body>
+
+</html>

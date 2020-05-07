@@ -1,0 +1,218 @@
+@font-face {
+
+    font-family: 'Santral-Medium';
+    src: url('../fonts/Santral-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+ body{
+}
+
+* {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    height: auto;
+}
+
+nav, header, main, footer {
+    padding-left: 42vh;
+}
+
+.sidenav {
+    width: 40vh;
+}
+
+.dropdown-content {
+    position: relative;
+    /*bottom: 10vh;*/
+}
+
+.menu-icon {
+    font-size: 2.2rem;
+}
+
+.fixed-action-btn {
+    /* right: auto;  */
+    bottom: auto;
+    margin: 2vh;
+    /* margin-left: 5%; */
+}
+
+.preloader {
+    position: absolute;
+    z-index: 1234;
+    border-radius: 10vh;
+    background-color: #c0bbbb;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    height: 10vh;
+    width: 10vh;
+}
+
+.indeterminate {
+    background-color: #607d8b !important;
+}
+
+.dash {
+    min-height: 20vh !important;
+    margin-top: 1vh;
+}
+
+.proje-chart, .notifications {
+    min-height: 30vh;
+}
+
+.ticket-btn {
+    margin-top: 10vh;
+}
+
+.modal {
+    max-height: auto !important;
+    max-width: auto !important;
+    height: 70%;
+    width: 70%;
+}
+
+.ticket-box * {
+    max-height: 10vh;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+label {
+    color: #353535;
+}
+@media only screen and (max-width: 992px) {
+    nav, header, main, footer {
+        padding-left: 0;
+    }
+    .ticket-btn {
+        margin-top: 2vh;
+    }
+    .ticket-box * {
+        max-height: 100%;
+        height: 100%;
+        padding: auto;
+        margin: auto;
+    }
+}
+body {
+    background-color: #f2f7fb
+}
+
+
+
+
+.card {
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 5px 0 rgba(43, 43, 43, .1), 0 11px 6px -7px rgba(43, 43, 43, .1);
+    box-shadow: 0 0 5px 0 rgba(43, 43, 43, .1), 0 11px 6px -7px rgba(43, 43, 43, .1);
+    border: none;
+    margin-bottom: 30px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.card .card-header {
+    background-color: transparent;
+    border-bottom: none;
+    padding: 20px;
+    position: relative
+}
+
+.card .card-header h5:after {
+    content: "";
+    background-color: #d2d2d2;
+    width: 101px;
+    height: 1px;
+    position: absolute;
+    bottom: 6px;
+    left: 20px
+}
+
+.card .card-block {
+    padding: 1.25rem
+}
+
+.dropzone.dz-clickable {
+    cursor: pointer
+}
+
+.dropzone {
+    min-height: 150px;
+    border: 1px solid rgba(42, 42, 42, 0.05);
+    background: rgba(204, 204, 204, 0.15);
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px 0 rgba(43, 43, 43, 0.1);
+    box-shadow: inset 0 0 5px 0 rgba(43, 43, 43, 0.1)
+}
+
+.m-t-20 {
+    margin-top: 20px
+}
+
+.btn-primary,
+.sweet-alert button.confirm,
+.wizard>.actions a {
+    background-color: #4099ff;
+    border-color: #4099ff;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all ease-in .3s;
+    transition: all ease-in .3s
+}
+
+.btn {
+    border-radius: 2px;
+    text-transform: capitalize;
+    font-size: 15px;
+    cursor: pointer
+}
+.ips{
+    margin:0px;
+}
+
+.ana-container {
+    margin-bottom:20px;
+    height:200px;
+    background: white;
+    width: 100%;
+    display: flex;
+}
+.ana-container img {
+    height: 100%;
+    width:100%;
+    /* width: 100%; */
+}
+.icerik-container{
+    margin-left:0%;
+}
+.icerik-metin {
+    margin-left:20px;
+
+    width: 60%;
+    min-width: 30%;
+    /* height: 100%; */
+}
+.baslik{
+    margin-left:20px;
+    min-width: 30%;
+}
+.icerik-resim{
+    width:25%;
+}
+.gonder{
+    background: blue !important;
+}
+.sil{
+    background: #ff325c !important;
+}

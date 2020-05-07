@@ -1,0 +1,166 @@
+<?php <!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Panel</title>
+    <script src="./assets/js/dropzone.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/dropzone.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/Chart.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="blue-grey lighten-5">
+    <nav>
+        <div class=" ">
+            <div class="light-green lighten-4">
+                <ul class="sidenav sidenav-fixed" id="mobile-demo">
+                    <div class="hide-on-med-and-down white darken-4">
+                        <a href="#!">
+                            <h2>LOGO</h2>
+                        </a>
+                    </div>
+                    <li><a href="./index.html">Ana Sayfa</a></li>
+                    <li><a href="./sayfalar.html">Sayfalar</a></li>
+                    <li><a href="./galeri.html">Galeri</a></li>
+                    <li><a href="./ticket.html">Destek</a></li>
+                    <li><a href="./ayarlar.html">Ayarlar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="row blue darken-4 valign-wrapper hide-on-med-and-up">
+            <div class="col s10">
+                <a href="#!">
+                    <h2>LOGO</h2>
+                </a>
+            </div>
+            <div class="col s2 ">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger s2"><i class="menu-icon material-icons  white-text">menu</i></a>
+            </div>
+        </div>
+        <div class="fixed-action-btn  animated fadeInDown">
+            <a class="btn-floating btn-large">
+                <img src="./assets/images/girl-icon-png-28.jpg.png" class="responsive-img" alt="">
+            </a>
+            <ul>
+                <li><a href="logout.html" class="btn-floating red darken-4"><i class="material-icons">logout</i></a></li>
+                <li><a href="./profil.html" class="btn-floating blue darken-4"><i class="material-icons">account_circle</i></a></li>
+            </ul>
+        </div>
+    </header>
+
+<main>
+
+
+<div class="row">
+    <div class="col s12">
+        <h1 class="flow-text">Düzenle</h1>
+    </div>
+</div>
+
+<div class="divider"></div>
+<form action="#" method="POST">
+    <div class="row">
+        <div class="col s12 m9 animated fadeInLeft">
+            <div class="form-group">
+                <h5>Makale Başlığı</h5>
+                <input type="text" name="baslik" id="baslik" class="form-control" placeholder="" aria-describedby="helpId" required>
+            </div>
+            <div class="form-group">
+                <h5>Makale İçeriği</h5>
+                <textarea class="ckeditor" name="txtCkeditor" required></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m3 animated fadeInLeft">
+                <div class="form-group">
+                    <h5>Durum</h5>
+                    <div class="form-group">
+                        <select class="text-center form-control" name="durum" id="exampleFormControlSelect2" required>
+                            <option value="aktif">Aktif</option>
+                            <option value="pasif">Pasif</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <h5>Kategoriler</h5>
+                    <select multiple class="text-center form-control" name="kategori" id="exampleFormControlSelect2" required>
+                        <option value="asd">asd</option>
+                        <option value="asdf">asdf</option>
+
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <h5>Öne Çıkarılan Resim</h5>
+                <input style="display:none;" id="ocr" name="oneCikanResimPost"><img name="oneCikanResim" id="oneCikar" src="" style="width:180px" alt="">
+            </div>
+            <div class="form-group">
+                <input id="yayinla" type="submit" class="btn btn-primary" value="Yayınla">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col s12 m9 animated fadeInLeft">
+                <div class="form-group">
+                    <h5>Etiketler</h5>
+                    <input type="text" name="etiket" id="etiket" class="form-control" placeholder="" aria-describedby="helpId" required>
+                </div>
+                <div class="form-group">
+                    <h5>Meta Açıklaması</h5>
+                    <input type="text" name="metadesc" placeholder="Meta Açıklaması" required>
+                </div>
+                <div class="form-group">
+                    <h5>Meta Başlığı</h5>
+                    <input type="text" name="metatitle" placeholder="Meta Açıklaması" required>
+                </div>
+            </div>
+        </div>
+</form>
+<form name="resimler" action="controller/uploadController.html" class="dropzone" id="dropzonewidget">
+    <div id="imageResult">
+    </div>
+</form>
+
+<script>
+    function oneCikart() {
+        $("#oneCikar").attr("src", $("#oneCikarButon").attr("name"));
+        $("#ocr").attr("value", $("#oneCikarButon").attr("name"));
+
+    }
+    var uploader = new Dropzone('#dropzonewidget');
+    uploader.on('success', function(file, resp) {
+        var obj = jQuery.parseJSON(resp);
+        $("#imageResult").append('<a id = "oneCikarButon" onClick="oneCikart()" name ="' + obj.image_url + '">Öne Çıkar</a>');
+    });
+</script>
+
+</main>
+<footer>
+</footer>
+
+<div class="progress preloader">
+    <div class="indeterminate"></div>
+</div>
+<script src="http://cdn.ckeditor.com/4.6.2/standard-all/ckeditor.js"></script>
+<script src="./assets/js/jquery-3.4.1.min.js"></script>
+<script src="./assets/js/materialize.min.js"></script>
+<script src="./assets/js/Chart.min.js"></script>
+<script src="./assets/js/main.js"></script>
+</body>
+
+</html>
