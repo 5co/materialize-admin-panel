@@ -2,7 +2,7 @@
 
 tasarıma ilk başladığım zamanlarda kodladığım bir admin panel template
 
-# [DEMO](https://selimcanozdemir.github.io/materialize-admin-panel/)
+# [DEMO](https://beyz64.github.io/materialize-admin-panel/)
 
 
 ## Responsive
