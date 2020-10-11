@@ -2,7 +2,7 @@
 
 tasarıma ilk başladığım zamanlarda kodladığım bir admin panel template
 
-# [DEMO](https://c8r.me/materialize-admin-panel/)
+# [DEMO](https://materialize-admin.c8r.me)
 
 
 ## Responsive
